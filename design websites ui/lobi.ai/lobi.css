@@ -28,8 +28,8 @@ li{
 
 }
 .download-btn{
-    height: 2rem;
-    width: 6rem;
+    height: 3rem;
+    width: 8rem;
     border-radius: 1000px;
     background-color: aquamarine;
     opacity: 85%;
@@ -43,4 +43,22 @@ li{
 li:hover{
     color: black;
     font-size: 20px;
+}
+/* design main section */
+.main-body{
+    text-align: center;
+    padding-top: 7rem;
+}
+.main-heading{
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(79, 215, 170);
+    margin: 1rem;
+}
+.main-para{
+    font-size: 30px;
+    /* font-weight: 500; */
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
 }
