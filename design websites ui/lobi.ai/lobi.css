@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    color: gray;
+}
+/* nav */
+.logo, img{
+height: 25px;
+width: 25px;
+}
+.navbar{
+    padding-top: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.navlist ul{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    font-size: 18px;
+    padding-left: 2rem;
+    padding-right:2rem ;
+    list-style: none;
+
+}
+.download-btn{
+    height: 2rem;
+    width: 6rem;
+    border-radius: 1000px;
+    background-color: aquamarine;
+    opacity: 85%;
+    border: none;
+}
+.download-btn:hover{
+    height: 2.3rem;
+    width: 6.5rem;
+    font-weight: 600;
+}
+li:hover{
+    color: black;
+    font-size: 20px;
+}
