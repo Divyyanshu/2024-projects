@@ -14,11 +14,13 @@ width: 25px;
     height: 2rem;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
 }
 .navlist ul{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 li{
     font-size: 18px;
