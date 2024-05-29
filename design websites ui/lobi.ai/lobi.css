@@ -1,66 +1,72 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: cursive;
-    color: gray;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-/* nav */
-.logo, img{
-height: 25px;
-width: 25px;
+.logo img {
+  height: 2.8rem;
+  width: 2.8rem;
 }
-.navbar{
-    padding-top: 2rem;
-    height: 2rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh;
 }
-.navlist ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+ul,
+li,
+a {
+  font-size: 1.1rem;
+  display: flex;
+  text-decoration: none;
+  gap: 4rem;
+  list-style: none;
+  color: #767676;
+  font-weight: 500;
 }
-li{
-    font-size: 18px;
-    padding-left: 2rem;
-    padding-right:2rem ;
-    list-style: none;
+button {
+  height: 3rem;
+  width: 8rem;
+  font-weight: 500;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  background-color: #04ddb2;
+  border-radius: 62rem;
+}
+li,
+a:hover {
+  color: rgb(27, 27, 27);
+  font-size: 1.12rem;
+}
+button:hover {
+  height: 3.1rem;
+  width: 8.1rem;
+  border-color: #04ddb2;
+}
 
+/* main section */
+.main-heading {
+  padding-top: 3rem;
+  font-size: 4rem;
+  text-align: center;
+  color: #333333;
 }
-.download-btn{
-    height: 3rem;
-    width: 8rem;
-    border-radius: 1000px;
-    background-color: aquamarine;
-    opacity: 85%;
-    border: none;
+.main-para {
+  text-align: center;
+  color: #333333;
+  font-size: 1.5rem;
 }
-.download-btn:hover{
-    height: 2.3rem;
-    width: 6.5rem;
-    font-weight: 600;
-}
-li:hover{
-    color: black;
-    font-size: 20px;
-}
-/* design main section */
-.main-body{
-    text-align: center;
-    padding-top: 7rem;
-}
-.main-heading{
-    font-size: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(79, 215, 170);
-    margin: 1rem;
-}
-.main-para{
-    font-size: 30px;
-    /* font-weight: 500; */
-    text-transform: capitalize;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+
+/* i frameing */
+/* iframe {
+  padding-top: 5rem;
+  object-fit: cover;
+  padding-left: 30rem;
+} */
+
+video{
+    padding-top: 4rem;
+    padding-left: 22rem;
+    box-shadow: 10px 10px 5px lightblue;
 }
