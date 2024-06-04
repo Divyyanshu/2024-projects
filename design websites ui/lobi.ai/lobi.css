@@ -5,6 +5,9 @@
   margin: 0;
   font-family: "Alegreya", serif;
 }
+body{
+  scroll-behavior: smooth;
+}
 .logo img {
   height: 2.8rem;
   width: 2.8rem;
@@ -52,11 +55,15 @@ main{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  margin-top: 200px;
 }
 .nav{
   position: fixed;
+  top: 0;
   width: 100%;
+  background-color: white;
+  opacity: 0.9;
 }
 h1{
   font-size: 64px;
@@ -71,4 +78,58 @@ p{
   text-align: center;
   line-height: 1.45;
   color: #333;
+}
+img{
+  height: 540px;
+  width: 940px;
+  margin-top: 48px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+img:hover{
+  height: 541px;
+  width: 941px;
+}
+.down-para{
+  width: 500px;
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 1.1;
+  word-spacing: 50%;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 48px;
+  margin-bottom: 30px;
+}
+.btn-bottom{
+  height: 4rem;
+  width: 12rem;
+  font-weight: 500;
+  color: white;
+  font-size: 1.6rem;
+  border: none;
+  background-color: #04ddb2;
+  border-radius: 62rem;
+}
+.btn-bottom:hover {
+  height: 4rem;
+  width: 12.1rem;
+  border-color: #04ddb2;
+}
+/* footer code using display grid */
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  margin: 48px 48px 48px;
+  padding: 100px;
+
+}
+ol,li {
+  color: rgb(8, 8, 8);
+}
+hr{
+  margin: 10rem 15rem 0rem 15rem;
+  /* margin-left: 15rem;
+  margin-right: 15rem; */
+  border-top: 1px dotted #c9c4c4;
 }
