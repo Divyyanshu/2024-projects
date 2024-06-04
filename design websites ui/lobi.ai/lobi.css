@@ -1,17 +1,10 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
 * {
   padding: 0;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Alegreya", serif;
 }
-/* body{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-} */
 .logo img {
   height: 2.8rem;
   width: 2.8rem;
@@ -25,7 +18,7 @@ nav {
 ul,
 li,
 a {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   display: flex;
   text-decoration: none;
   gap: 4rem;
@@ -33,13 +26,9 @@ a {
   color: #767676;
   font-weight: 500;
 }
-.nav{
-  position: fixed;
-  width: 100%;
-}
 button {
-  height: 3rem;
-  width: 8rem;
+  height: 2.5rem;
+  width: 7rem;
   font-weight: 500;
   color: white;
   font-size: 1.1rem;
@@ -53,14 +42,33 @@ a:hover {
   font-size: 1.12rem;
 }
 button:hover {
-  height: 3.1rem;
-  width: 8.1rem;
+  height: 2.6rem;
+  width: 7.1rem;
   border-color: #04ddb2;
 }
 /* main */
 main{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+.nav{
+  position: fixed;
+  width: 100%;
+}
+h1{
+  font-size: 64px;
+  color: #333;
+  line-height: 1.05;
+  margin: 0;
+}
+p{
+  width: 34rem;
+  font-size: 1.6rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 1.45;
+  color: #333;
 }
