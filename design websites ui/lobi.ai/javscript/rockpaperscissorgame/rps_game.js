@@ -18,6 +18,7 @@ let computerChoice = "";
 // }
 // button functioning
 
+
 rockBtn.addEventListener('click',()=>{
       playerChoice = "Rock";
       playerDivyanshu.innerText = `Player : ${playerChoice}`;
