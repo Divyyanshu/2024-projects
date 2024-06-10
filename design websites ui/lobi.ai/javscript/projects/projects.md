@@ -56,3 +56,69 @@ form.addEventListener('submit' , function(e){
 })
 
 ```
+## Project 3 (to do list) .
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list </title>
+</head>
+<body >
+    <style>
+        body{
+              background-color: #212121;
+              color: azure;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+        }
+    </style>
+    <h1>To do List </h1>
+    <div>
+        <label for="input-task">Input Task</label>
+        <input type="text" id="input-task">
+        <button type="submit" id="addTaskbtn">Add-Task</button>
+        <button type="submit" id="deleteTaskbtn">Delete-Task</button>
+    </div>
+        <ol id="taskItem"></ol>
+        <script src="index.js">
+        </script>
+</body>
+</html>
+```
+
+```javascript
+const inputTask = document.getElementById("input-task");
+const addTaskbtn = document.getElementById("addTaskbtn");
+const taskListElement = document.getElementById("taskItem");
+const deleteTaskbtn =document.getElementById("deleteTaskbtn")
+
+let taskList = [];
+
+// renderlist
+
+function randerList (){
+    taskListElement.innerHTML = "";
+    for(let i = 0; i <= taskList.length-1; i++){
+    const newTask =document.createElement('li');
+    newTask.innerText = taskList[i]
+    taskListElement.appendChild(newTask);}
+}
+
+function addTask (){
+    taskList.push(inputTask.value);
+   randerList();
+}
+
+function deleteTask (){
+    taskList.pop(inputTask.value);
+   randerList();
+}
+
+
+addTaskbtn.addEventListener('click',addTask);
+deleteTaskbtn.addEventListener('click',deleteTask);
+
+```

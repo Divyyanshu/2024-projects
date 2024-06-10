@@ -6,6 +6,7 @@ const deleteTaskbtn =document.getElementById("deleteTaskbtn")
 let taskList = [];
 
 // renderlist
+
 function randerList (){
     taskListElement.innerHTML = "";
     for(let i = 0; i <= taskList.length-1; i++){
@@ -23,5 +24,7 @@ function deleteTask (){
     taskList.pop(inputTask.value);
    randerList();
 }
+
+
 addTaskbtn.addEventListener('click',addTask);
 deleteTaskbtn.addEventListener('click',deleteTask);
