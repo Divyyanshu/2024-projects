@@ -9,6 +9,9 @@ body{
     align-items: center;
     justify-content: center;
 }
+#banner{
+    font-size: 5rem;
+}
 #clock{
     background-color: green;
     font-size: 40px;
