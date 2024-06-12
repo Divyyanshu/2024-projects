@@ -1,19 +1,19 @@
 
 // promises (resolve,reject)
  let walking = function(){
-    return new Promise(()=>{
-        let walkER = TRUE ;
-        if(walkER === res){
-            console.log("helloo reslover")
+    let wasIWalking = false ;
+    return new Promise((resolve,reject)=>{
+        if(wasIWalking === true){
+            resolve('i was walking')
         }
         else{
-            console.log("hello rejector")
+            reject("i was not walking")
         }
     })
  }
 
 
- walking().then((div)=>console.log(div)).catch((jak)=>console.error(jak))
+walking().then((res)=>console.log(res)).catch((rej)=>console.error(rej))
 //  let sleeping = function(){
 //      console.log("i am sleppping")
 //  }
