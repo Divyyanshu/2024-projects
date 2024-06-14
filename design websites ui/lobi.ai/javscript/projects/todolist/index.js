@@ -9,10 +9,15 @@ let taskList = [];
 
 function randerList (){
     taskListElement.innerHTML = "";
-    for(let i = 0; i <= taskList.length-1; i++){
-    const newTask =document.createElement('li');
-    newTask.innerText = taskList[i]
-    taskListElement.appendChild(newTask);}
+    // for(let i = 0; i <= taskList.length-1; i++){
+    // const newTask =document.createElement('li');
+    // newTask.innerText = taskList[i]
+    // taskListElement.appendChild(newTask);}
+    taskList.map((value)=>{
+        const newTask = document.createElement('li');
+        newTask.innerText = value;
+        taskListElement.appendChild(newTask);
+    })
 }
 
 function addTask (){
