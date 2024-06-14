@@ -14,4 +14,4 @@ function subs (){
 }
 
 add.addEventListener("click", adds);
-subtract.addEventListener("click", subs);
+subtract.addEventListener("click", subs);           
